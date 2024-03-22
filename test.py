@@ -72,6 +72,9 @@ def rightTest():
         "email": "joselito.junior@gmail.com"
     }
 
+    print('Data: ', data)
+    print()
+
     try:
         validate(data)
         print('Dados enviados com sucesso!')
@@ -95,11 +98,17 @@ def wrongTest():
         "email": "joselito.junior@gmail.com"
     }
 
+    print('Data: ', data)
+    print()
+
+
     try:
         validate(data)
         print('Dados enviados com sucesso!')
     except Exception as e:
         print('Ocorreu um erro durante a validação:', e)
 
+
 rightTest()
+print('-----------------------------------------------------------------------------------------------')
 wrongTest()
